@@ -1,0 +1,51 @@
+{
+  "tasks": {
+    "build": "deno run -A ./build/build.ts",
+    "build:watch": "deno run -A ./build/build.ts --watch",
+    "build:dev": "deno run -A ./build/build.ts --develope",
+    "build:dev:watch": "deno run -A ./build/build.ts --develope --watch",
+    "serve": "",
+    "lint": "deno lint",
+    "test": "deno test -A --check --reload --doc --allow-none --junit-path=\"./report.xml\""
+  },
+  "test": {
+    "include": [
+      "./src/**/*.test.ts"
+    ]
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "camelcase",
+        "default-param-last",
+        "eqeqeq",
+        "explicit-function-return-type",
+        "explicit-module-boundary-types",
+        "guard-for-in",
+        "no-const-assign",
+        "no-eval",
+        "no-external-import",
+        "no-non-null-asserted-optional-chain",
+        "no-non-null-assertion",
+        "no-self-compare",
+        "no-sparse-arrays",
+        "no-sync-fn-in-async-fn",
+        "no-throw-literal",
+        "no-undef",
+        "prefer-ascii",
+        "single-var-declarator",
+        "verbatim-module-syntax"
+      ],
+      "exclude": [
+        "no-inferrable-types"
+      ]
+    }
+  },
+  "fmt": {
+    "semiColons": true,
+    "singleQuote": true
+  }
+}
