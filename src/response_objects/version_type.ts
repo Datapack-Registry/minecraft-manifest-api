@@ -1,1 +1,1 @@
-export type VersionType = 'release' | 'snapshot' | 'old_alpha' | 'old_beta'
+export type VersionType = 'snapshot' | 'release' | 'old_beta' | 'old_alpha';

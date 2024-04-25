@@ -1,7 +1,9 @@
-import type { Latest } from './latest.ts';
 import type { Version } from './version.ts';
 
 export interface Manifest {
-  latest : Latest,
+  latest : {
+    release : string,
+    snapshot : string
+  },
   versions : Version[]
 }
